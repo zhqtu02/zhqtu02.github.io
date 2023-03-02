@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhqtu02.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Notes in 5th Training Course.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TrainingCourse">
+<meta property="og:url" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/index.html">
+<meta property="og:site_name" content="图图小屋">
+<meta property="og:description" content="Notes in 5th Training Course.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/TrainingCourse/image-20220608162355563.png">
+<meta property="og:image" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/TrainingCourse/image-20220607203648564.png">
+<meta property="og:image" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/TrainingCourse/image-20220607204638115.png">
+<meta property="og:image" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/TrainingCourse/image-20220617101832407.png">
+<meta property="article:published_time" content="2022-05-21T15:35:59.000Z">
+<meta property="article:modified_time" content="2023-03-02T02:45:30.774Z">
+<meta property="article:author" content="图图转圈">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zhqtu02.github.io/2022/05/21/TrainingCourse/TrainingCourse/image-20220608162355563.png">
+
+<link rel="canonical" href="https://zhqtu02.github.io/2022/05/21/TrainingCourse/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>TrainingCourse | 图图小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">图图小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhqtu02.github.io/2022/05/21/TrainingCourse/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/notion-avatar.gif">
+      <meta itemprop="name" content="图图转圈">
+      <meta itemprop="description" content="TRUST THE PROCESS.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="图图小屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          TrainingCourse
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-05-21 23:35:59" itemprop="dateCreated datePublished" datetime="2022-05-21T23:35:59+08:00">2022-05-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-03-02 10:45:30" itemprop="dateModified" datetime="2023-03-02T10:45:30+08:00">2023-03-02</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">理论学习</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">Notes in 5th Training Course.</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>0x00 前言</p>
+<p>Notes in 5th Training Course.</p>
+<span id="more"></span>
+<p>[TOC]</p>
+<h2 id="Unit1"><a href="#Unit1" class="headerlink" title="Unit1"></a>Unit1</h2><h3 id="Theoretical-foundation-of-the-land-carbon-cycle-and-matrix-approach"><a href="#Theoretical-foundation-of-the-land-carbon-cycle-and-matrix-approach" class="headerlink" title="Theoretical foundation of the land carbon cycle and matrix approach"></a>Theoretical foundation of the land carbon cycle and matrix approach</h3><h4 id="Convergence-of-the-land-carbon-cycle"><a href="#Convergence-of-the-land-carbon-cycle" class="headerlink" title="Convergence of the land carbon cycle"></a>Convergence of the land carbon cycle</h4><h4 id="Matrix-approach-to-model-representation-of-the-land-carbon-cycle"><a href="#Matrix-approach-to-model-representation-of-the-land-carbon-cycle" class="headerlink" title="Matrix approach to model representation of the land carbon cycle"></a>Matrix approach to model representation of the land carbon cycle</h4><h3 id="Paradox-of-the-matrix-equation-and-non-autonomous-systems"><a href="#Paradox-of-the-matrix-equation-and-non-autonomous-systems" class="headerlink" title="Paradox of the matrix equation and non-autonomous systems"></a>Paradox of the matrix equation and non-autonomous systems</h3><h4 id="Predictability-of-the-land-carbon-cycle"><a href="#Predictability-of-the-land-carbon-cycle" class="headerlink" title="Predictability of the land carbon cycle"></a>Predictability of the land carbon cycle</h4><h3 id="Introduction-to-modelling"><a href="#Introduction-to-modelling" class="headerlink" title="Introduction to modelling"></a>Introduction to modelling</h3><h4 id="What-is-a-model"><a href="#What-is-a-model" class="headerlink" title="What is a model?"></a>What is a model?</h4><h4 id="Models-in-research"><a href="#Models-in-research" class="headerlink" title="Models in research"></a>Models in research</h4><h4 id="Ways-of-using-models"><a href="#Ways-of-using-models" class="headerlink" title="Ways of using models"></a>Ways of using models</h4><h4 id="System-dynamics"><a href="#System-dynamics" class="headerlink" title="System dynamics"></a>System dynamics</h4><h4 id="Types-of-land-carbon-cycle-models"><a href="#Types-of-land-carbon-cycle-models" class="headerlink" title="Types of land carbon cycle models"></a>Types of land carbon cycle models</h4><h4 id="Modelling-workflow"><a href="#Modelling-workflow" class="headerlink" title="Modelling workflow"></a>Modelling workflow</h4><ol>
+<li>Specify the question or hypothesis and identify how modelling can help</li>
+<li>Choose a model</li>
+<li>Verify that the model works</li>
+<li>Calibrate the model</li>
+<li>Validate the model</li>
+<li>Design the model experiment</li>
+</ol>
+<h3 id="Flow-diagrams-and-balance-equations-of-land-carbon-models"><a href="#Flow-diagrams-and-balance-equations-of-land-carbon-models" class="headerlink" title="Flow diagrams and balance equations of land carbon models"></a>Flow diagrams and balance equations of land carbon models</h3><h2 id="Unit2"><a href="#Unit2" class="headerlink" title="Unit2"></a>Unit2</h2><h3 id="Developing-matrix-representation-of-land-carbon-models"><a href="#Developing-matrix-representation-of-land-carbon-models" class="headerlink" title="Developing matrix representation of land carbon models"></a>Developing matrix representation of land carbon models</h3><h3 id="Coupled-carbon-nitrogen-matrix-models"><a href="#Coupled-carbon-nitrogen-matrix-models" class="headerlink" title="Coupled carbon-nitrogen matrix models"></a>Coupled carbon-nitrogen matrix models</h3><h3 id="Compartmental-systems"><a href="#Compartmental-systems" class="headerlink" title="Compartmental systems"></a>Compartmental systems</h3><h2 id="Unit3"><a href="#Unit3" class="headerlink" title="Unit3"></a>Unit3</h2><h3 id="Unified-diagnostic-system-for-uncertainty-analysis"><a href="#Unified-diagnostic-system-for-uncertainty-analysis" class="headerlink" title="Unified diagnostic system for uncertainty analysis"></a>Unified diagnostic system for uncertainty analysis</h3><h3 id="Sensitivity-analysis-with-matrix-equations-A-case-study-with-ORCHIDE"><a href="#Sensitivity-analysis-with-matrix-equations-A-case-study-with-ORCHIDE" class="headerlink" title="Sensitivity analysis with matrix equations: A case study with ORCHIDE"></a>Sensitivity analysis with matrix equations: A case study with ORCHIDE</h3><h3 id="Matrix-phosphorus-model-and-data-assimilation"><a href="#Matrix-phosphorus-model-and-data-assimilation" class="headerlink" title="Matrix phosphorus model and data assimilation"></a>Matrix phosphorus model and data assimilation</h3><h2 id="Unit4"><a href="#Unit4" class="headerlink" title="Unit4"></a>Unit4</h2><h3 id="Non-autonomous-ODE-System-and-Stability-Analysis"><a href="#Non-autonomous-ODE-System-and-Stability-Analysis" class="headerlink" title="Non-autonomous ODE System and Stability Analysis"></a>Non-autonomous ODE System and Stability Analysis</h3><h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h4><p>In <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Mathematics">mathematics</a>, an <strong>ordinary differential equation</strong> (<strong>ODE</strong>) is a <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Differential_equation">differential equation</a> containing one or more functions of one <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Independent_variable">independent variable</a> and the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Derivative">derivatives</a> of those functions.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ordinary_differential_equation#cite_note-Zill2012-1">[1]</a> The term <em>ordinary</em> is used in contrast with the term <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Partial_differential_equation">partial differential equation</a> which may be with respect to <em>more than</em> one independent variable.<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Ordinary_differential_equation#cite_note-2">[2]</a></p>
+<p>一般常微分方程有各种不同的形式：有一元高阶的，其中又有自治的（方程中不显含时间）和非自治的（方程中显含时间）之分，又有多元的常微分方程组。但是所有常见的非线性常微分方程都可以化为自治的一阶常微分方程组 [1] 。</p>
+<p>在一个微分方程中，如果其自变量没有显含在方程中，则称此方程是自治的（autonomous).如果x为自变量，则自治一阶微分方程可以记为F(y,y’)=0,或者写成标准形式 的dy/dx=f(y).相应地，如果其自变量显含在方程中，则称此方程是非自治的（non-autonomous).如果x为自变量，则<strong>非自治一阶微分可以记为F(x,y,y’)=0,或者写成标准形式 的dy/dx=f(x,y)</strong>.</p>
+<h3 id="Semi-Analytic-Spin-up-SASU-of-CLM"><a href="#Semi-Analytic-Spin-up-SASU-of-CLM" class="headerlink" title="Semi Analytic Spin-up (SASU) of CLM"></a>Semi Analytic Spin-up (SASU) of CLM</h3><h4 id="What-is-spin-up"><a href="#What-is-spin-up" class="headerlink" title="What is spin-up?"></a>What is spin-up?</h4><h4 id="Development-of-spin-up-approaches"><a href="#Development-of-spin-up-approaches" class="headerlink" title="Development of spin-up approaches"></a>Development of spin-up approaches</h4><h4 id="Semi-analytic-spin-up"><a href="#Semi-analytic-spin-up" class="headerlink" title="Semi-analytic spin-up"></a>Semi-analytic spin-up</h4><h4 id="The-procedure-of-semi-analytic-spin-up-in-CABLE"><a href="#The-procedure-of-semi-analytic-spin-up-in-CABLE" class="headerlink" title="The procedure of semi-analytic spin-up in CABLE"></a>The procedure of semi-analytic spin-up in CABLE</h4><h4 id="Computational-efficiency"><a href="#Computational-efficiency" class="headerlink" title="Computational efficiency"></a>Computational efficiency</h4><h3 id="Time-Characteristics-of-Compartmental-Systems"><a href="#Time-Characteristics-of-Compartmental-Systems" class="headerlink" title="Time Characteristics of Compartmental Systems"></a>Time Characteristics of Compartmental Systems</h3><h4 id="Introduction-1"><a href="#Introduction-1" class="headerlink" title="Introduction"></a>Introduction</h4><h4 id="Age-and-transit-time-distributions-for-autonomous-systems-in-equilibrium"><a href="#Age-and-transit-time-distributions-for-autonomous-systems-in-equilibrium" class="headerlink" title="Age and transit time distributions for autonomous systems in equilibrium"></a>Age and transit time distributions for autonomous systems in equilibrium</h4><h4 id="Age-and-transit-time-distributions-for-non-autonomous-systems"><a href="#Age-and-transit-time-distributions-for-non-autonomous-systems" class="headerlink" title="Age and transit time distributions for non-autonomous systems"></a>Age and transit time distributions for non-autonomous systems</h4><h5 id="Age-distributions"><a href="#Age-distributions" class="headerlink" title="Age distributions"></a>Age distributions</h5><h5 id="Transit-time-distributions"><a href="#Transit-time-distributions" class="headerlink" title="Transit time distributions"></a>Transit time distributions</h5><h4 id="Final-remarks"><a href="#Final-remarks" class="headerlink" title="Final remarks"></a>Final remarks</h4><h2 id="Unit5"><a href="#Unit5" class="headerlink" title="Unit5"></a>Unit5</h2><h3 id="Overview-of-traceability-analysis"><a href="#Overview-of-traceability-analysis" class="headerlink" title="Overview of traceability analysis"></a>Overview of traceability analysis</h3><h4 id="Why"><a href="#Why" class="headerlink" title="Why"></a>Why</h4><p>One key challenge for Earth system science is how to reduce the large disagreement in carbon cycle predictions among models of the terrestrial biosphere incorporated in ESMs. To tackle this challenge, we need to answer one question: why terrestrial carbon cycle predictions are so different among models? In the past three decades, numerous model intercomparison projects (MIPs) have been established, in part to shed light on this question. Although those MIPs have made important contributions to model evaluation and synthesis, they have been limited by design in their ability to explore the sources of model uncertainty. Thus, our question can be refined into how we can <strong>trace the model uncertainty back to its sources</strong>, such as model structures, parameters and external forcings.</p>
+<h4 id="What"><a href="#What" class="headerlink" title="What"></a>What</h4><p><strong>the dynamic of terrestrial carbon storage</strong></p>
+<script type="math/tex; mode=display">
+\frac{dX(t)}{dt}=Bu(t)+A\xi(t)KX(t) \tag{5.1.1}</script><ul>
+<li>$\frac{d𝑋(𝑡)}{d𝑡}$ characterizes <strong>the dynamic of terrestrial carbon storage</strong></li>
+<li>$u$ is the <strong>carbon inputs from photosynthesis</strong></li>
+<li>$B$ is the <strong>partitioning coefficients to live carbon pools</strong> (e.g. leaf, wood 3 and root). </li>
+<li>$A$ is a <strong>transfer coefficients matrix</strong> to represent the movements of carbon atoms among multiple carbon pools.</li>
+<li>$K$ represents the <strong>exit rates of different carbon pools</strong>.</li>
+<li>$\xi(t)$ modifies the decay rate of different pools by adding influences from environmental factors (temperature, moisture, nutrients, soil texture and so on). </li>
+<li>$Bu(t)$ represents the partitioning of the assimilated carbon from photosynthesis among different plant carbon pools.</li>
+<li>$A\xi(t)KX(t)$ describes the movement and exit rates of carbon atoms along their transferring paths (Xia et al., 2013; Luo et al., 2017). </li>
+<li>Different models may have different combinations of plant and soil pools and different values in vector B or matrices A and C, but they can be unified by this matrix equation.</li>
+</ul>
+<p>At steady state, terrestrial carbon reservoirs reach their maximum storage capacity and there are no further net carbon exchanges. Therefore, the <strong>steady-state land carbon storage</strong> ($X_{SS}$) can be solved by letting Eqn (5.1.1) equal 0 (i.e., $\frac{d(X)}{dt}=0$):</p>
+<script type="math/tex; mode=display">
+X_{SS}=(-A \xi K)^{-1} B U_{SS} \tag{5.1.2}</script><ul>
+<li>$X_{SS}$ is <strong>a vector containing the steady-state pool sizes of all carbon pools</strong>.</li>
+<li>$U_{SS}$ is the <strong>carbon influx at steady state</strong>. </li>
+<li>$(-A \xi K)^{-1} B $ measures the ecosystem <strong>carbon residence time</strong> ($\tau_E$), which is an important ecosystem property involving multiple processes, including carbon allocation (the $B$ matrix), carbon transfer network (the $A$ matrix), decomposition processes (the $K$ matrix) and modifications from environmental factors (the $\xi$ matrix).</li>
+</ul>
+<p>Here, net primary productivity (NPP) is treated as carbon inputs, and the $X_{ss}$ can then be decomposed into NPP and $\tau_E$:</p>
+<script type="math/tex; mode=display">
+X_{SS}=NPP \times \tau_E</script><p>As mentioned above, $\tau_E$ is determined by four items: $(-A \xi K)^{-1} B $. Here, $A$, $K$ and $B$ are the intrinsic model properties, while $\xi$ represents external influences from environmental factors. We thus rearrange these items and express $\tau_E$ as: $\tau_E = (-A^{-1} K^{-1} B) \xi^{-1}$ We further merge $(-A^{-1} K^{-1} B)$ and define it as the <strong>baseline carbon residence time</strong> ($\tau_E^{‘}$ ). Then, $\tau_E$ can be decomposed into $\tau_E^{‘}$ and $\xi^{-1}$:</p>
+<script type="math/tex; mode=display">
+\tau_E = \tau_E^{'} \xi^{-1} \tag{5.1.3}</script><p>where $\tau_E^{‘}$ is determined by model intrinsic properties, associated with plant trait, soil attributes, number of C pools and how C is transferred among these pools at different cycling rates. As defined above, $\xi$ represents the modifying effects of environmental factors as a fractional value applied multiplicatively to the baseline C residence time. If, as an example, we consider temperature and water availability as the main environmental factors scaling process rates in our system, we may divide $\xi$ into a temperature scalar ($\xi_T$) and a water scalar ($\xi_W$): $\xi=\xi_T \xi_W$</p>
+<p>Through the above mathematical rearrangements of Eqn (5.1.2), the modeled land carbon storage at steady state is decomposed into its determinative components as illustrated in Figure 1. The $X_{SS}$ is first decomposed into NPP and $\tau_E$. Then, $\tau_E$ can be further traced into $\tau_E^{‘}$ and $\xi$, while $\xi$ is divided into $\xi_T$ and $\xi_W$. This framework offers a systematic way to decompose the steady-state land carbon cycle in a form that fits the structure of many common land carbon models. Most recently, advances in terrestrial carbon cycle theory have extended the capability of this framework to trace transient-state land carbon storage (Luo et al., 2017). This is explored further in Chapter 5.2</p>
+<p><img src="TrainingCourse/image-20220608162355563.png" alt="image-20220608162355563"></p>
+<p>The traceability framework in its original form depends on a steady-state assumption for ecosystem carbon stocks. However, due to climate change and disturbance history, most ecosystems are not at steady state. The non-steady state is called transient state and the challenge is how to trace transient C storage dynamics.</p>
+<h4 id="Benefits-of-traceability-analysis-for-identifying-model-uncertainty-sources"><a href="#Benefits-of-traceability-analysis-for-identifying-model-uncertainty-sources" class="headerlink" title="Benefits of traceability analysis for identifying model uncertainty sources"></a>Benefits of traceability analysis for identifying model uncertainty sources</h4><p>The traceability framework can facilitate the evaluation of land carbon  cycle models and the ESM frameworks to which they are coupled by <strong>identifying the sources of simulation difference within and between models</strong>.</p>
+<h5 id="Case-1-Understanding-terrestrial-carbon-cycle-variations-within-a-model"><a href="#Case-1-Understanding-terrestrial-carbon-cycle-variations-within-a-model" class="headerlink" title="Case 1: Understanding terrestrial carbon cycle variations within a model"></a>Case 1: Understanding terrestrial carbon cycle variations within a model</h5><h5 id="Case-2-Inter-model-comparisons-of-terrestrial-carbon-cycle-simulations"><a href="#Case-2-Inter-model-comparisons-of-terrestrial-carbon-cycle-simulations" class="headerlink" title="Case 2: Inter-model comparisons of terrestrial carbon cycle simulations"></a>Case 2: Inter-model comparisons of terrestrial carbon cycle simulations</h5><h5 id="Case-3-Evaluating-impacts-of-external-forcings-on-terrestrial-carbon-cycle-simulations"><a href="#Case-3-Evaluating-impacts-of-external-forcings-on-terrestrial-carbon-cycle-simulations" class="headerlink" title="Case 3: Evaluating impacts of external forcings on terrestrial carbon cycle simulations"></a>Case 3: Evaluating impacts of external forcings on terrestrial carbon cycle simulations</h5><h5 id="Case-4-Assessment-of-new-processes-in-land-carbon-models"><a href="#Case-4-Assessment-of-new-processes-in-land-carbon-models" class="headerlink" title="Case 4: Assessment of new processes in land carbon models"></a>Case 4: Assessment of new processes in land carbon models</h5><h5 id="Case-5-Accelerating-the-pace-of-model-evaluation-via-online-tools"><a href="#Case-5-Accelerating-the-pace-of-model-evaluation-via-online-tools" class="headerlink" title="Case 5: Accelerating the pace of model evaluation via online tools"></a>Case 5: Accelerating the pace of model evaluation via online tools</h5><h3 id="Applications-of-the-transient-traceability-framework"><a href="#Applications-of-the-transient-traceability-framework" class="headerlink" title="Applications of the transient traceability framework"></a>Applications of the transient traceability framework</h3><h4 id="A-traceability-framework-for-transient-land-carbon-storage-dynamics"><a href="#A-traceability-framework-for-transient-land-carbon-storage-dynamics" class="headerlink" title="A traceability framework for transient land carbon storage dynamics"></a>A traceability framework for transient land carbon storage dynamics</h4><p>The traceability framework in its original form depends on a steady-state assumption for ecosystem carbon stocks. However, due to climate change and disturbance history, most ecosystems are not at steady state. The non-steady state is called <strong>transient state</strong> and the challenge is how to trace transient C storage dynamics.</p>
+<p><strong>core equation for traceability of transient C storage</strong></p>
+<script type="math/tex; mode=display">
+X(t)=(A\xi(t)K)^{-1}B(t)u(t)-(A\xi(t)K)^{-1}X'(t)</script><ul>
+<li>$𝑋(𝑡)$ is <strong>individual pool size at time t</strong>, which is a vector in a multi-pool model;</li>
+<li>$𝐴$ is a <strong>matrix of transfer coefficients</strong> between C pools; </li>
+<li>$𝜉(𝑡)$ is a <strong>diagonal matrix of environmental scalars</strong> to reflect the control of physical and chemical properties, e.g., temperature, moisture, nutrients, litter quality and soil texture, on C cycle processes;</li>
+<li>$𝐾$ is a <strong>diagonal matrix of exit rates from donor pools</strong>, which encapsulates mortality rates for plant pools and decomposition coefficients for litter and soil pools; </li>
+<li>$𝐵$ is a <strong>vector of allocation coefficients</strong> of C input to each pool; </li>
+<li>$𝑢(𝑡)$ is <strong>C input</strong>, i.e., NPP or GPP</li>
+<li>$𝑋′(𝑡)$ is <strong>net change of any individual C pool at time t</strong>, which is a vector for a multi-pool model. The sum of $𝑋′$ of all individual C pools corresponds to net ecosystem production (NEP), or the complement of net ecosystem exchange (NEE).</li>
+<li>$(𝐴\xi(𝑡)𝐾)^{-1}$ is named as <strong>chasing time</strong>, which is a matrix representing the timescale for the net C pool change to be redistributed in the network consisting of all C pools. </li>
+<li>$(𝐴\xi(𝑡)𝐾)^{-1}𝐵(t)$, the product of chasing time and the allocation coefficient $B$, is <strong>the residence time of individual pools</strong>. :question:</li>
+</ul>
+<script type="math/tex; mode=display">
+X(t) = X_c(t) – X_p(t)</script><ul>
+<li>$X_c = (A\xi(𝑡)𝐾)^{−1}𝐵(t)𝑢(𝑡)$, <strong>C storage capacity</strong> (product of the residence time and C input), is <u>the maximum C that individual pools or the whole ecosystem can store at a time</u>.</li>
+<li>$X_p=((𝐴\xi(𝑡)𝐾)^{-1}𝑋′(𝑡))$, the product of chasing time and net C pool change, represents <u>redistribution of net change of individual C pools in the network</u>. This redistribution of net C pool change indicates <u>the potential of an individual pool or the whole ecosystem to gain or lose C</u>. Therefore, it is named as <strong>C storage potential</strong>, $X_p$.</li>
+</ul>
+<h4 id="Full-transient-traceability-analysis"><a href="#Full-transient-traceability-analysis" class="headerlink" title="Full transient traceability analysis"></a>Full transient traceability analysis</h4><p>The first application uses the framework exactly as described above to investigate the differences in carbon storage between two forest ecosystems, Duke Forest and Harvard Forest, and analyze the underlying mechanisms that explain these differences. </p>
+<p><strong>Full transient traceability analysis</strong> is that the modeled differences of C storage among ecosystems or among models can be traced back to differences in respective components in Eqn 5.2.1, finally to individual processes or parameters in the models.</p>
+<p>Using this framework, we can decompose transient C storage into C storage capacity and C storage potential.</p>
+<ul>
+<li>C storage capacity is the product of NPP and C residence time. <ul>
+<li>C residence time is jointly determined by the environmental scalars, transfer coefficients, exit rate, and allocation coefficients. Environmental scalars can be derived from climate forcing.</li>
+</ul>
+</li>
+<li>C storage potential is the product of chasing time and net C pool change. <ul>
+<li>Chasing time is jointly determined by environmental scalars for temperature and precipitation, transfer coefficients and exit rate. </li>
+</ul>
+</li>
+</ul>
+<p><img src="TrainingCourse/image-20220607203648564.png" alt="image-20220607203648564"></p>
+<h4 id="Post-MIP-transient-traceability-analysis"><a href="#Post-MIP-transient-traceability-analysis" class="headerlink" title="Post-MIP transient traceability analysis"></a>Post-MIP transient traceability analysis</h4><p>The second application uses this general framework in combination with some other methods to decompose modeled land carbon storage in three MIPs: CMIP5, Trends in Net Land-Atmosphere Carbon Exchange (TRENDY), and Multiscale Synthesis and Terrestrial Model Intercomparison Project (MsTMIP). Decomposing differences in land carbon storage across models within each MIP and between the three MIPs helps us to understand why the models simulate different outcomes, and what features of the model structure or parameters may be responsible for these differences.</p>
+<p>Due to the challenge in acquiring all the details of the involved models, in their analysis, Zhou et al. (2018) applied the transient traceability framework in combination with another technique, variance decomposition, to identify the underlying causes for uncertainty in simulated land carbon storage within and across three MIPs. We called this kind of analysis <strong>post-MIP transient traceability analysis</strong> to be distinguished from the full transient traceability analysis. Figure 5.2.6 shows the schematic diagram of this transient traceability analysis within and among the three MIPs.</p>
+<p><img src="TrainingCourse/image-20220607204638115.png" alt="image-20220607204638115"></p>
+<p>The post-MIP approach adopted by Zhou et al (2018) is a novel approach that provides an alternative way to understand the causes of the uncertainty of multiple models when full traceability analysis is not able to be realized due to the effort required to accommodate detailed information on the original models. Such post-MIP traceability analysis can be automatically run with a public platform, <strong>TraceME (v1.0)</strong>, which is an online traceability analysis system for model evaluation on land carbon dynamics (Zhou et al. 2020). While post-MIP traceability analysis offers useful insight, it would <strong>be helpful to apply the full traceability analysis</strong>, as in the first case of this chapter, to MIPs <strong>to help identify the specific model components and assumptions that dominate model uncertainty and focus attention on those issues in need of closer scrutiny to improve model behavior</strong>.</p>
+<h3 id="Benchmark-analysis"><a href="#Benchmark-analysis" class="headerlink" title="Benchmark analysis"></a>Benchmark analysis</h3><h4 id="What-is-a-Benchmark"><a href="#What-is-a-Benchmark" class="headerlink" title="What is a Benchmark?"></a>What is a Benchmark?</h4><p><strong>Benchmark analysis</strong> is a procedure to measure performance of models against a set of defined standards. </p>
+<p>The benchmark analysis includes</p>
+<ol>
+<li>defining targeted aspects of model performance to be evaluated;</li>
+<li>testing model performance in comparison with a set of benchmarks;</li>
+<li>measuring model performance skill through quantitative metrics;</li>
+<li>evaluating model performance and offering suggestions for future model improvement.</li>
+</ol>
+<h4 id="Aspects-of-land-models-to-be-evaluated"><a href="#Aspects-of-land-models-to-be-evaluated" class="headerlink" title="Aspects of land models to be evaluated"></a>Aspects of land models to be evaluated</h4><p><strong>Baseline state for biogeochemical cycles</strong> includes simulated global totals, spatial distributions, and temporal dynamics of gross primary production, net primary production, vegetation and soil carbon stocks, ecosystem respiration, litter production, litter mass, and net ecosystem production.</p>
+<h4 id="Reference-data-sets-as-benchmarks"><a href="#Reference-data-sets-as-benchmarks" class="headerlink" title="Reference data sets as benchmarks"></a>Reference data sets as benchmarks</h4><p>Benchmarks could consist of </p>
+<ol>
+<li>direct observations, (most reliable, reference data)</li>
+<li>results from manipulative experiments, (most reliable, reference data)</li>
+<li>data-model products, </li>
+<li>or data-derived functional relationships.</li>
+</ol>
+<p>Reference data sets used in a benchmarking analysis are usually assessed and weighted for their degree of certainty, scale appropriateness, and overall importance of the constraint or process to model predictions.</p>
+<h4 id="Benchmarking-metrics"><a href="#Benchmarking-metrics" class="headerlink" title="Benchmarking metrics"></a>Benchmarking metrics</h4><p>Five metrics were developed for ILAMB to evaluate model performance. The five metrics are to measure bias, root-mean-square-error (RMSE), phase shift, interannual variability, and spatial distributions.</p>
+<ul>
+<li><p>The <strong>bias</strong> （偏差） measures differences between the mean value of the reference data and that of the model over the same time period and the same spatial area.</p>
+<ul>
+<li><script type="math/tex; mode=display">
+Bias=y_i-\hat{y_i}</script></li>
+</ul>
+</li>
+<li><p><strong>RMSE</strong> （均方根误差） is computed as the square root of the mean square error between modeled values and the reference data over a time period. </p>
+<ul>
+<li><script type="math/tex; mode=display">
+RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^n(y_i-\hat{y_i})^2}</script></li>
+</ul>
+</li>
+<li><p>The <strong>phase shift</strong> （相移） is evaluated for the annual cycle of many data sets that have monthly variability by comparing the timing of the maximum of the annual cycle of the variable at each spatial cell across the time period of the reference data set. The phase shift is calculated as the difference between the reference and model data sets by subtracting their respective maximum values in days. </p>
+</li>
+<li><p>:question:The <strong>interannual variability</strong> in model simulations is evaluated by removing the annual cycle from both the reference data and the model. A score is then computed as a function of their differences over space.</p>
+</li>
+<li><p>:question:The <strong>spatial distribution</strong> of any time-averaged variable is evaluated by computing the standard deviation of modeled values over space normalized by the standard deviation of the reference data. The spatial correlation is also calculated for the period mean values of reference data and modeled values. A score is assigned by the penalty for large deviation of the normalized standard deviations and the spatial correlation from a value of 1. </p>
+</li>
+</ul>
+<p>The <strong>overall score</strong> for a given variable and data product is a weighted sum of the five metrics, producing a single scalar score for each variable for every model or model version.</p>
+<h4 id="International-Land-Model-Benchmarking-ILAMB-project"><a href="#International-Land-Model-Benchmarking-ILAMB-project" class="headerlink" title="International Land Model Benchmarking (ILAMB) project"></a>International Land Model Benchmarking (ILAMB) project</h4><p>ILAMB project evaluated eight variables including biomass, burned area, gross primary productivity, leaf area index, global net ecosystem carbon balance, net ecosystem exchange, ecosystem respiration, and soil carbon</p>
+<p>Five metrics were developed for ILAMB to evaluate model performance. The five metrics are to measure bias, root-mean-square-error (RMSE), phase shift, interannual variability, and spatial distributions</p>
+<h2 id="Unit6"><a href="#Unit6" class="headerlink" title="Unit6"></a>Unit6</h2><h3 id="Data-assimilation-Introduction-procedure-and-applications"><a href="#Data-assimilation-Introduction-procedure-and-applications" class="headerlink" title="Data assimilation: Introduction, procedure, and applications"></a>Data assimilation: Introduction, procedure, and applications</h3><h4 id="Introduction-2"><a href="#Introduction-2" class="headerlink" title="Introduction"></a>Introduction</h4><p>Three essential elements towards realistic model prediction</p>
+<ul>
+<li>model structure to represent the real-world processes that control system functions</li>
+<li>model specification through parameterization to constrain model predictions</li>
+<li>the external forcing variables have to reflect the physical, chemical, and biological environment that an ecosystem experiences to perform its functioning</li>
+</ul>
+<p>Data assimilation is a statistical approach to optimally combine models with observations</p>
+<ul>
+<li>To estimate parameter values</li>
+<li>To quantify uncertainty</li>
+<li>To select alternative model structures</li>
+<li>To evaluate values of different data sets in model prediction</li>
+</ul>
+<p>Simulation modelling or forward modeling</p>
+<p>Data assimilation is also needed to integrate information contained in both model and  data. Modeling is one approach to scientific inquiry mainly through process thinking. Data are  obtained from field or laboratory research, which is also an approach to scientific inquiry through snapshot records of ecosystem states at the time when the observation was made. The  two approaches acquire information on different aspects of an ecosystem. The information  acquired from recording the state of the ecosystem is highly complementary to that through process understanding. Integration of model and data will help gain the best knowledge from imperfect data and imperfect models (Luo et al. 2011).</p>
+<p>Data assimilation or inverse analysis or inference</p>
+<p>Regression analysis (7 steps)</p>
+<ol>
+<li>decide what object is</li>
+<li>collect data</li>
+<li>select a regression euqation</li>
+<li>measure mismatch</li>
+<li>minimize the mismatch to optimize estimation</li>
+<li>obtained optimized regreesion coefficient</li>
+<li>use the optimized equation to do prediction</li>
+</ol>
+<p>Step1: Objective</p>
+<p>General objective: To predict ecosystem responses to elevated $CO_2$ with uncertainty quantified (para 2,page 1)</p>
+<p>Specific objective: To estimate parameter values ($c_1,…,c_7$ in Table 1, page 3)and then predict pool changes at ambient and elevated $CO_2$, treatments in Duke Forest (para 4, page 2)</p>
+<h3 id="Bayesian-statistics-and-Markov-chain-Monte-Carlo-method-in-data-assimilation"><a href="#Bayesian-statistics-and-Markov-chain-Monte-Carlo-method-in-data-assimilation" class="headerlink" title="Bayesian statistics and Markov chain Monte Carlo method in data assimilation"></a>Bayesian statistics and Markov chain Monte Carlo method in data assimilation</h3><h3 id="Application-of-data-assimilation-to-soil-incubation-data"><a href="#Application-of-data-assimilation-to-soil-incubation-data" class="headerlink" title="Application of data assimilation to soil incubation data"></a>Application of data assimilation to soil incubation data</h3><h3 id="Practice-on-7-step-data-assimilation"><a href="#Practice-on-7-step-data-assimilation" class="headerlink" title="Practice on 7 step data assimilation"></a>Practice on 7 step data assimilation</h3><h2 id="Unit8"><a href="#Unit8" class="headerlink" title="Unit8"></a>Unit8</h2><h3 id="Introduction-to-ecological-forecasting"><a href="#Introduction-to-ecological-forecasting" class="headerlink" title="Introduction to ecological forecasting"></a>Introduction to ecological forecasting</h3><p>Four elements for ecological forecasting</p>
+<ul>
+<li>predictability of land carbon cycle</li>
+<li>observations to constrain forecasting</li>
+<li>data assimilation to integrate data with model</li>
+<li>a workflow system to automate ecological forecasting.</li>
+</ul>
+<h4 id="Weather-forecasting"><a href="#Weather-forecasting" class="headerlink" title="Weather forecasting"></a>Weather forecasting</h4><p>The major milestones of the weather prediction include </p>
+<ul>
+<li><p>knowing the laws of physics to make weather forecasting possible in 1901</p>
+</li>
+<li><p>developing and using super-computing in 1970s</p>
+</li>
+<li><p>using satellite and other observations in 1980s</p>
+</li>
+<li><p>using data assimilation in 1990s.</p>
+</li>
+</ul>
+<p>In short, success in weather forecasting depends on </p>
+<ul>
+<li>understanding of physical laws to develop models, </li>
+<li>collecting satellite and other data, </li>
+<li>using data assimilation to constrain initial values every a few hours, </li>
+<li>and relying on super-computing to carry out calculation of the numeric models. </li>
+</ul>
+<p>Similar to weather forecasting, ecological forecasting also needs <strong>process-based models</strong>, <strong>observations</strong>, <strong>data assimilation</strong>, and <strong>super-computing</strong>. The process-based models offer model structure whereas observations are assimilated into the process-based models for parameterization through data assimilation via super-computing.</p>
+<h4 id="Models-and-predictability-of-terrestrial-carbon-cycle"><a href="#Models-and-predictability-of-terrestrial-carbon-cycle" class="headerlink" title="Models and predictability of terrestrial carbon cycle"></a>Models and predictability of terrestrial carbon cycle</h4><p>One of the key properties of terrestrial carbon dynamics is <strong>the convergence toward equilibrium over time</strong> even if external forcing and disturbances often push the carbon cycle to be disequilibrium.</p>
+<p>There are <strong>three levels of predictability</strong>: high, medium, and low, <strong>plus two cases</strong>: less known and unknown about the predictability for individual processes (Luo <em>et al.</em>, 2015).<img src="TrainingCourse/image-20220617101832407.png" alt="image-20220617101832407"></p>
+<h4 id="Data-availability-to-constrain-forecast-via-data-assimilation"><a href="#Data-availability-to-constrain-forecast-via-data-assimilation" class="headerlink" title="Data availability to constrain forecast via data assimilation"></a>Data availability to constrain forecast via data assimilation</h4><h4 id="Workflow-system-to-facilitate-ecological-forecasting"><a href="#Workflow-system-to-facilitate-ecological-forecasting" class="headerlink" title="Workflow system to facilitate ecological forecasting"></a>Workflow system to facilitate ecological forecasting</h4><p>Ecological Platform for Assimilating Data (<a target="_blank" rel="noopener" href="https://ecolab.nau.edu/ecopad/">EcoPAD (nau.edu)</a>) into models (Huang et al. 2019) is a software system that links sensor networks to ecological forecasting. It integrates eco-informatics, webtechnology, ecological models, data assimilation techniques, and visualization.</p>
+<h3 id="Ecological-Platform-for-Assimilating-Data-EcoPAD-for-ecological-forecasting"><a href="#Ecological-Platform-for-Assimilating-Data-EcoPAD-for-ecological-forecasting" class="headerlink" title="Ecological Platform for Assimilating Data (EcoPAD) for ecological forecasting"></a>Ecological Platform for Assimilating Data (EcoPAD) for ecological forecasting</h3><h4 id="Why-do-we-need-EcoPAD"><a href="#Why-do-we-need-EcoPAD" class="headerlink" title="Why do we need EcoPAD?"></a>Why do we need EcoPAD?</h4><h4 id="General-structure-of-EcoPAD"><a href="#General-structure-of-EcoPAD" class="headerlink" title="General structure of EcoPAD"></a>General structure of EcoPAD</h4><h4 id="Applications-of-EcoPAD-the-example-of-SPRUCE"><a href="#Applications-of-EcoPAD-the-example-of-SPRUCE" class="headerlink" title="Applications of EcoPAD: the example of SPRUCE"></a>Applications of EcoPAD: the example of SPRUCE</h4><h2 id="Unit9"><a href="#Unit9" class="headerlink" title="Unit9"></a>Unit9</h2><h3 id="Machine-learning-in-carbon-cycle-research"><a href="#Machine-learning-in-carbon-cycle-research" class="headerlink" title="Machine learning in carbon cycle research"></a>Machine learning in carbon cycle research</h3><h4 id="What-is-machine-learning-ML"><a href="#What-is-machine-learning-ML" class="headerlink" title="What is machine learning(ML)?"></a>What is machine learning(ML)?</h4><p>Machine learning is a sub-class of artificial intelligence in which we <strong>enable computers to learn from data</strong>, to develop pattern recognition, and to continuously learn and make predictions based on data. </p>
+<p>ML algorithms normally have <strong>strong mathematical and statistical bases</strong>.</p>
+<h4 id="Types-of-ML-algorithms"><a href="#Types-of-ML-algorithms" class="headerlink" title="Types of ML algorithms"></a>Types of ML algorithms</h4><h4 id="Application-of-ML-in-carbon-studies-or-GHGs-mitigation"><a href="#Application-of-ML-in-carbon-studies-or-GHGs-mitigation" class="headerlink" title="Application of ML in carbon studies or GHGs mitigation"></a>Application of ML in carbon studies or GHGs mitigation</h4><h4 id="Examples-of-ML-in-land-carbon-studies"><a href="#Examples-of-ML-in-land-carbon-studies" class="headerlink" title="Examples of ML in land carbon studies"></a>Examples of ML in land carbon studies</h4><p>unsupervised learning vs. supervised learning </p>
+<ul>
+<li><p>whether the labelled output variable is involved or not. </p>
+</li>
+<li><p><strong>Unsupervised learning</strong> corresponds to inferring underlying patterns from an unlabeled dataset without any reference to labeled outcomes or predictions. Clustering is a typical unsupervised machine learning method. We could use clustering to detect anomalies, study plant traits, genetic similarities ect. </p>
+</li>
+<li><strong>Supervised learning</strong> is the machine learning process of learning a function that maps an input to an output based on example input-output pairs. It infers a function (or relationship) from labeled training data consisting of a set of training examples. <ul>
+<li>If the training or target samples use <strong>category values</strong>, we call this type of task, <strong>classification</strong>. </li>
+<li>If the target has <strong>continuous numerical values</strong>, we refer to this task as <strong>regression</strong>. </li>
+</ul>
+</li>
+</ul>
+<p>A <strong>decision tree</strong> consists of three components: a root node, decision nodes and leaf node. A decision tree algorithm divides a training dataset into branches. The branches could be further separated into child branches and so on until a leaf node that could not be separated further. People use entropy (or Gini Impurity) or other information gain metrics to split branches. A high information gain means that a high degree of uncertainty (information entropy) has been removed.</p>
+<p>Take the case of predicting if a customer will purchase a mobile phone or not from the lecture of Onesmus Mbaabu as an example. The features or characteristics of the phone form the basis of the decision. The root node and decision nodes of the decision represent the features of the phone. The leaf node represents the final output, either buying or not buying. The main features that determine the choice include the price, internal storage, and Random Access Memory (RAM).</p>
+<p><strong>Random forest (RF)</strong> is made up by multiple decision trees. RF involving the following steps, People normally take the original dataset and create bagged samples of size n, with n smaller than the original size of the dataset. Bagging involves using different samples of training data rather than just one sample; Then train a Decision Tree with each of the bagged datasets as input. But, <strong>when doing a node split, don’t use all features in the dataset. Instead, randomly select a smaller number from all the features in the training set</strong>. Then pick the best split using impurity measures, like Gini Impurity or Entropy. Aggregate the results of the individual decision trees into a single output. if you’re working on a <strong>Regression task, Average the values for each observation</strong>, produced by each tree; if you’re working on a <strong>Classification task, Do a majority vote across all trees for each observation</strong>,. These steps help to <strong>avoid overfitting issues</strong> from one decision tree.</p>
+<p>A <strong>neural network</strong> (NN) is a series of algorithms that mimics the way the human brain operates to recognize underlying relationships in the dataset. Neural networks refer to systems of neurons.. A simple neural network includes <strong>an input layer</strong>, <strong>an output (or target) layer</strong> and, in between, <strong>a hidden layer</strong> which performs most of the computations required by our network. The layers are connected via <strong>nodes</strong>, and these connections form a “network” – the neural network – of interconnected nodes. Neural networks with multiple layers are known as <strong>“deep” networks</strong> and are used for deep learning algorithms. </p>
+<p>I took an example from Simplilearn, suppose we going to predict the shape of an image (a square, a circle or a triangle). The image is made up by 28x28 = 784 pixels. Each pixel is used as input to the first layer of neurons. Neurons of the first layer are interconnected with neurons of the second layer through channels. Each of the channel is assigned a numerical value known as weight. The input is then multiplied by the weight and the sum is then used as input to the neurons of the hidden layer. Each of the neuron is associated with a numerical value, called the <strong>bias (B)</strong>, which is then added to the input sum. This value is then passed to a threshold function, called the <strong>activation function</strong>. The result of the activation function determines if the neurons will be activated or not. The activated neurons pass data to the neurons of the next layer over the channels. In this way, data is propagated through the network, which is called <strong>forward propagation</strong>. In the output layer, the neuron of the highest value determines the output. The value in this example is probability. For example, in the illustration, the value of square has the highest probability. So square is the predicted output. In the example case, our input is a circle. Here is the training processes we haven’t done yet. In the training, our predicted output is compared against the real output to quantify the error in prediction. The computed errors give the direction and magnitude of change to reduce the error. The error information is then transferred backward through the network. This process is called <strong>backpropagation</strong>. The weights are adjusted accordingly. The forward and backward propagations are conducted iteratively until our weights are determined so that the network could predict the shape correctly in most tests. Depending on the complexity of the data, neuron networks may take hours or even months to train. With the quick advancement of this area, different variations of NN, such as <strong>convolutional neural networks</strong>, <strong>recurrent neural networks</strong> designed for different computation requirements.</p>
+<h2 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h2><h3 id="Basic-Concepts"><a href="#Basic-Concepts" class="headerlink" title="Basic Concepts"></a>Basic Concepts</h3><h3 id="Decision-Tree"><a href="#Decision-Tree" class="headerlink" title="Decision Tree"></a>Decision Tree</h3><h2 id="概率论"><a href="#概率论" class="headerlink" title="概率论"></a>概率论</h2>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/21/TrainingCourse-Unit4/" rel="prev" title="TrainingCourse-Unit4">
+      <i class="fa fa-chevron-left"></i> TrainingCourse-Unit4
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/29/gettelman2022future/" rel="next" title="gettelman2022future">
+      gettelman2022future <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit1"><span class="nav-number">1.</span> <span class="nav-text">Unit1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Theoretical-foundation-of-the-land-carbon-cycle-and-matrix-approach"><span class="nav-number">1.1.</span> <span class="nav-text">Theoretical foundation of the land carbon cycle and matrix approach</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Convergence-of-the-land-carbon-cycle"><span class="nav-number">1.1.1.</span> <span class="nav-text">Convergence of the land carbon cycle</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Matrix-approach-to-model-representation-of-the-land-carbon-cycle"><span class="nav-number">1.1.2.</span> <span class="nav-text">Matrix approach to model representation of the land carbon cycle</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paradox-of-the-matrix-equation-and-non-autonomous-systems"><span class="nav-number">1.2.</span> <span class="nav-text">Paradox of the matrix equation and non-autonomous systems</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Predictability-of-the-land-carbon-cycle"><span class="nav-number">1.2.1.</span> <span class="nav-text">Predictability of the land carbon cycle</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction-to-modelling"><span class="nav-number">1.3.</span> <span class="nav-text">Introduction to modelling</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#What-is-a-model"><span class="nav-number">1.3.1.</span> <span class="nav-text">What is a model?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Models-in-research"><span class="nav-number">1.3.2.</span> <span class="nav-text">Models in research</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ways-of-using-models"><span class="nav-number">1.3.3.</span> <span class="nav-text">Ways of using models</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#System-dynamics"><span class="nav-number">1.3.4.</span> <span class="nav-text">System dynamics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Types-of-land-carbon-cycle-models"><span class="nav-number">1.3.5.</span> <span class="nav-text">Types of land carbon cycle models</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Modelling-workflow"><span class="nav-number">1.3.6.</span> <span class="nav-text">Modelling workflow</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flow-diagrams-and-balance-equations-of-land-carbon-models"><span class="nav-number">1.4.</span> <span class="nav-text">Flow diagrams and balance equations of land carbon models</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit2"><span class="nav-number">2.</span> <span class="nav-text">Unit2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Developing-matrix-representation-of-land-carbon-models"><span class="nav-number">2.1.</span> <span class="nav-text">Developing matrix representation of land carbon models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Coupled-carbon-nitrogen-matrix-models"><span class="nav-number">2.2.</span> <span class="nav-text">Coupled carbon-nitrogen matrix models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Compartmental-systems"><span class="nav-number">2.3.</span> <span class="nav-text">Compartmental systems</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit3"><span class="nav-number">3.</span> <span class="nav-text">Unit3</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unified-diagnostic-system-for-uncertainty-analysis"><span class="nav-number">3.1.</span> <span class="nav-text">Unified diagnostic system for uncertainty analysis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sensitivity-analysis-with-matrix-equations-A-case-study-with-ORCHIDE"><span class="nav-number">3.2.</span> <span class="nav-text">Sensitivity analysis with matrix equations: A case study with ORCHIDE</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Matrix-phosphorus-model-and-data-assimilation"><span class="nav-number">3.3.</span> <span class="nav-text">Matrix phosphorus model and data assimilation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit4"><span class="nav-number">4.</span> <span class="nav-text">Unit4</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Non-autonomous-ODE-System-and-Stability-Analysis"><span class="nav-number">4.1.</span> <span class="nav-text">Non-autonomous ODE System and Stability Analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction"><span class="nav-number">4.1.1.</span> <span class="nav-text">Introduction</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Semi-Analytic-Spin-up-SASU-of-CLM"><span class="nav-number">4.2.</span> <span class="nav-text">Semi Analytic Spin-up (SASU) of CLM</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#What-is-spin-up"><span class="nav-number">4.2.1.</span> <span class="nav-text">What is spin-up?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Development-of-spin-up-approaches"><span class="nav-number">4.2.2.</span> <span class="nav-text">Development of spin-up approaches</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Semi-analytic-spin-up"><span class="nav-number">4.2.3.</span> <span class="nav-text">Semi-analytic spin-up</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#The-procedure-of-semi-analytic-spin-up-in-CABLE"><span class="nav-number">4.2.4.</span> <span class="nav-text">The procedure of semi-analytic spin-up in CABLE</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Computational-efficiency"><span class="nav-number">4.2.5.</span> <span class="nav-text">Computational efficiency</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Time-Characteristics-of-Compartmental-Systems"><span class="nav-number">4.3.</span> <span class="nav-text">Time Characteristics of Compartmental Systems</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction-1"><span class="nav-number">4.3.1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Age-and-transit-time-distributions-for-autonomous-systems-in-equilibrium"><span class="nav-number">4.3.2.</span> <span class="nav-text">Age and transit time distributions for autonomous systems in equilibrium</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Age-and-transit-time-distributions-for-non-autonomous-systems"><span class="nav-number">4.3.3.</span> <span class="nav-text">Age and transit time distributions for non-autonomous systems</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Age-distributions"><span class="nav-number">4.3.3.1.</span> <span class="nav-text">Age distributions</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Transit-time-distributions"><span class="nav-number">4.3.3.2.</span> <span class="nav-text">Transit time distributions</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Final-remarks"><span class="nav-number">4.3.4.</span> <span class="nav-text">Final remarks</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit5"><span class="nav-number">5.</span> <span class="nav-text">Unit5</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Overview-of-traceability-analysis"><span class="nav-number">5.1.</span> <span class="nav-text">Overview of traceability analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Why"><span class="nav-number">5.1.1.</span> <span class="nav-text">Why</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#What"><span class="nav-number">5.1.2.</span> <span class="nav-text">What</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Benefits-of-traceability-analysis-for-identifying-model-uncertainty-sources"><span class="nav-number">5.1.3.</span> <span class="nav-text">Benefits of traceability analysis for identifying model uncertainty sources</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Case-1-Understanding-terrestrial-carbon-cycle-variations-within-a-model"><span class="nav-number">5.1.3.1.</span> <span class="nav-text">Case 1: Understanding terrestrial carbon cycle variations within a model</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Case-2-Inter-model-comparisons-of-terrestrial-carbon-cycle-simulations"><span class="nav-number">5.1.3.2.</span> <span class="nav-text">Case 2: Inter-model comparisons of terrestrial carbon cycle simulations</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Case-3-Evaluating-impacts-of-external-forcings-on-terrestrial-carbon-cycle-simulations"><span class="nav-number">5.1.3.3.</span> <span class="nav-text">Case 3: Evaluating impacts of external forcings on terrestrial carbon cycle simulations</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Case-4-Assessment-of-new-processes-in-land-carbon-models"><span class="nav-number">5.1.3.4.</span> <span class="nav-text">Case 4: Assessment of new processes in land carbon models</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Case-5-Accelerating-the-pace-of-model-evaluation-via-online-tools"><span class="nav-number">5.1.3.5.</span> <span class="nav-text">Case 5: Accelerating the pace of model evaluation via online tools</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Applications-of-the-transient-traceability-framework"><span class="nav-number">5.2.</span> <span class="nav-text">Applications of the transient traceability framework</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#A-traceability-framework-for-transient-land-carbon-storage-dynamics"><span class="nav-number">5.2.1.</span> <span class="nav-text">A traceability framework for transient land carbon storage dynamics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Full-transient-traceability-analysis"><span class="nav-number">5.2.2.</span> <span class="nav-text">Full transient traceability analysis</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Post-MIP-transient-traceability-analysis"><span class="nav-number">5.2.3.</span> <span class="nav-text">Post-MIP transient traceability analysis</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Benchmark-analysis"><span class="nav-number">5.3.</span> <span class="nav-text">Benchmark analysis</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#What-is-a-Benchmark"><span class="nav-number">5.3.1.</span> <span class="nav-text">What is a Benchmark?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Aspects-of-land-models-to-be-evaluated"><span class="nav-number">5.3.2.</span> <span class="nav-text">Aspects of land models to be evaluated</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reference-data-sets-as-benchmarks"><span class="nav-number">5.3.3.</span> <span class="nav-text">Reference data sets as benchmarks</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Benchmarking-metrics"><span class="nav-number">5.3.4.</span> <span class="nav-text">Benchmarking metrics</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#International-Land-Model-Benchmarking-ILAMB-project"><span class="nav-number">5.3.5.</span> <span class="nav-text">International Land Model Benchmarking (ILAMB) project</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit6"><span class="nav-number">6.</span> <span class="nav-text">Unit6</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-assimilation-Introduction-procedure-and-applications"><span class="nav-number">6.1.</span> <span class="nav-text">Data assimilation: Introduction, procedure, and applications</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Introduction-2"><span class="nav-number">6.1.1.</span> <span class="nav-text">Introduction</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bayesian-statistics-and-Markov-chain-Monte-Carlo-method-in-data-assimilation"><span class="nav-number">6.2.</span> <span class="nav-text">Bayesian statistics and Markov chain Monte Carlo method in data assimilation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Application-of-data-assimilation-to-soil-incubation-data"><span class="nav-number">6.3.</span> <span class="nav-text">Application of data assimilation to soil incubation data</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Practice-on-7-step-data-assimilation"><span class="nav-number">6.4.</span> <span class="nav-text">Practice on 7 step data assimilation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit8"><span class="nav-number">7.</span> <span class="nav-text">Unit8</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Introduction-to-ecological-forecasting"><span class="nav-number">7.1.</span> <span class="nav-text">Introduction to ecological forecasting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Weather-forecasting"><span class="nav-number">7.1.1.</span> <span class="nav-text">Weather forecasting</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Models-and-predictability-of-terrestrial-carbon-cycle"><span class="nav-number">7.1.2.</span> <span class="nav-text">Models and predictability of terrestrial carbon cycle</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Data-availability-to-constrain-forecast-via-data-assimilation"><span class="nav-number">7.1.3.</span> <span class="nav-text">Data availability to constrain forecast via data assimilation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Workflow-system-to-facilitate-ecological-forecasting"><span class="nav-number">7.1.4.</span> <span class="nav-text">Workflow system to facilitate ecological forecasting</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ecological-Platform-for-Assimilating-Data-EcoPAD-for-ecological-forecasting"><span class="nav-number">7.2.</span> <span class="nav-text">Ecological Platform for Assimilating Data (EcoPAD) for ecological forecasting</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Why-do-we-need-EcoPAD"><span class="nav-number">7.2.1.</span> <span class="nav-text">Why do we need EcoPAD?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#General-structure-of-EcoPAD"><span class="nav-number">7.2.2.</span> <span class="nav-text">General structure of EcoPAD</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Applications-of-EcoPAD-the-example-of-SPRUCE"><span class="nav-number">7.2.3.</span> <span class="nav-text">Applications of EcoPAD: the example of SPRUCE</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unit9"><span class="nav-number">8.</span> <span class="nav-text">Unit9</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Machine-learning-in-carbon-cycle-research"><span class="nav-number">8.1.</span> <span class="nav-text">Machine learning in carbon cycle research</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#What-is-machine-learning-ML"><span class="nav-number">8.1.1.</span> <span class="nav-text">What is machine learning(ML)?</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Types-of-ML-algorithms"><span class="nav-number">8.1.2.</span> <span class="nav-text">Types of ML algorithms</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Application-of-ML-in-carbon-studies-or-GHGs-mitigation"><span class="nav-number">8.1.3.</span> <span class="nav-text">Application of ML in carbon studies or GHGs mitigation</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Examples-of-ML-in-land-carbon-studies"><span class="nav-number">8.1.4.</span> <span class="nav-text">Examples of ML in land carbon studies</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Machine-Learning"><span class="nav-number">9.</span> <span class="nav-text">Machine Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Basic-Concepts"><span class="nav-number">9.1.</span> <span class="nav-text">Basic Concepts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Decision-Tree"><span class="nav-number">9.2.</span> <span class="nav-text">Decision Tree</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E8%AE%BA"><span class="nav-number">10.</span> <span class="nav-text">概率论</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="图图转圈"
+      src="/images/notion-avatar.gif">
+  <p class="site-author-name" itemprop="name">图图转圈</p>
+  <div class="site-description" itemprop="description">TRUST THE PROCESS.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhqtu02" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zhqtu02@gmail.com" title="E-Mail → mailto:zhqtu02@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/1822988711" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;1822988711" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/zhqtu02" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/zhqtu02_life" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;zhqtu02_life" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">图图转圈</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

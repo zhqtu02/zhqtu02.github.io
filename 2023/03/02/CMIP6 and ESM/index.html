@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhqtu02.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="Something about CMIP6 and ESM.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CMIP6 and ESM">
+<meta property="og:url" content="https://zhqtu02.github.io/2023/03/02/CMIP6%20and%20ESM/index.html">
+<meta property="og:site_name" content="图图小屋">
+<meta property="og:description" content="Something about CMIP6 and ESM.">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-03-02T04:32:47.000Z">
+<meta property="article:modified_time" content="2023-03-02T04:33:23.756Z">
+<meta property="article:author" content="图图转圈">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://zhqtu02.github.io/2023/03/02/CMIP6%20and%20ESM/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>CMIP6 and ESM | 图图小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">图图小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhqtu02.github.io/2023/03/02/CMIP6%20and%20ESM/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/notion-avatar.gif">
+      <meta itemprop="name" content="图图转圈">
+      <meta itemprop="description" content="TRUST THE PROCESS.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="图图小屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          CMIP6 and ESM
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-03-02 12:32:47 / 修改时间：12:33:23" itemprop="dateCreated datePublished" datetime="2023-03-02T12:32:47+08:00">2023-03-02</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Something about CMIP6 and ESM.<br><span id="more"></span></p>
+<h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h1 id="📸-摘录笔记"><a href="#📸-摘录笔记" class="headerlink" title="📸 摘录笔记"></a>📸 摘录笔记</h1><p>创建日期：(2022/5/12 上午12:05:11)</p>
+<blockquote>
+<p>气候系统模式，简言之就是封装了大量自然定 律的计算机程序，是对气候系统中物理、化学和生 态过程的数学表达，它包括大气、海洋、陆面和海 冰4个基础子系统。</p>
+<p>📍 引自：(周 等。, 2020, p. 2)</p>
+<p>地球系统模式是在气候系统模 式的基础之上，进一步考虑气候系统中的碳、氮循 环等生物地球化学循环过程，其核心依然是大气-海 洋-陆面-海冰多圈层耦合的物理气候系统。</p>
+<p>📍 引自：(周 等。, 2020, p. 2)</p>
+<p>国际上气候模式的发展经历 了以下几个阶段：（1）20世纪70年代中期，大气环 流模式得到快速发展；（2）80年代中期，开始实现大 气环流模式与陆面过程模式的耦合，而海冰则是给 定 的 ； （ 3） 90年 代 初 期 ， 大 气 环 流 模 式 实 现 与 “ 沼 泽”海洋耦合，并用于政府间气候变化专门委员会 （IPCC）第1次评估报告的气候预估试验；（4）1995 年前后，大气环流模式开始考虑硫酸盐气溶胶和火 山气溶胶，开始纳入完整的海洋环流模式，海-陆气-冰耦合模式开始用于IPCC第2次评估报告的 气候预估试验；（5）2001年前后，陆面模式引入径流 过程以闭合水循环，大气模式对气溶胶的处理日臻 完善，海洋模式能够描述经圈翻转环流，许多模式 开始考虑气候系统中的碳循环过程，支撑IPCC第 3次评估报告的模式系统较之以往物理过程考虑更 为完善；（6）2007年前后，陆面模式开始引入动态植 被，大气模式开始考虑大气化学过程，并支撑了IPCC 第4次评估报告的气候预估试验。在这个阶段，海气耦合技术的一个重要进步是多数模式无需再使 用“通量订正”技术；（7）2013年前后，气候系统模 式逐步进入地球系统模式阶段，具体体现是海洋模 式的生态系统模块、陆面模式的全球植被动力学模 块对生物地球化学循环过程的模拟能力得到全面 提升。</p>
+<p>📍 引自：(周 等。, 2020, p. 3)</p>
+<p>最近5年，大气模式逐渐向对流分辨尺度、 海洋模式逐渐向涡旋分辨方向发展</p>
+<p>📍 引自：(周 等。, 2020, p. 3)</p>
+<p>由 WCRP耦 合 模 拟 工 作 组 （ WGCM） 发 起 的 耦 合 模 式 比 较 计 划 （ CMIP） ， 自 1995年以来已经组织了6次，在制定气候模式试验 和模式检验标准、统一数据格式、规范数据共享国 际机制等方面发挥了不可替代的作用。CMIP数据 被广泛地应用于国际气候研究，支撑了IPCC评估 报告的编写和气候变化谈判活动。</p>
+<p>📍 引自：(周 等。, 2020, p. 3)</p>
+<p>历史温度变化的模拟是衡量气候模式性能的 基本指标</p>
+<p>📍 引自：(周 等。, 2020, p. 10)</p>
+<p>CMIP6的 核 心 气 候 预 估 试 验 包 括 SSP1-2.6、 SSP2-4.5、 SSP3-7.0和 SSP5-8.5四 种 情 景 。</p>
+<p>📍 引自：(周 等。, 2020, p. 10)</p>
+<p>如何理解在相同的排放情景驱动下不同模式 预估的气候变化存在显著差异？这与不同模式对 温室气体强迫的敏感度不同有直接关系。度量模 式敏感度的指标之一是平衡态气候敏感度（Equilibrium Climate Sensitivity，ECS），它表示2倍于工 业革命前CO2浓度下全球平均温度（GMST）最终 上升的幅度。ECS是表征模式对温室气体响应敏 感性的核心指标，与远期气候预估的不确定性密切 相关（Zhou，et al，2015b；Chen，et al，2015）。</p>
+<p>📍 引自：(周 等。, 2020, p. 11)</p>
+<p>当前模式结果的不确定性来自3个 方面，包括模式之间因动力框架和物理过程等不同 而造成的不确定性、同一模式因采用不同的参数选 择所带来的不确定性、同一模式采用不同初值所造 成的内部变率对结果的影响等。</p>
+<p>📍 引自：(周 等。, 2020, p. 17)</p>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/03/02/Notes-in-Photosynthesis/" rel="prev" title="Notes in Photosynthesis">
+      <i class="fa fa-chevron-left"></i> Notes in Photosynthesis
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/03/02/GPP/" rel="next" title="GPP">
+      GPP <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#H2"><span class="nav-number">1.</span> <span class="nav-text">H2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#H3"><span class="nav-number">1.1.</span> <span class="nav-text">H3</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%F0%9F%93%B8-%E6%91%98%E5%BD%95%E7%AC%94%E8%AE%B0"><span class="nav-number"></span> <span class="nav-text">📸 摘录笔记</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="图图转圈"
+      src="/images/notion-avatar.gif">
+  <p class="site-author-name" itemprop="name">图图转圈</p>
+  <div class="site-description" itemprop="description">TRUST THE PROCESS.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhqtu02" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zhqtu02@gmail.com" title="E-Mail → mailto:zhqtu02@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/1822988711" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;1822988711" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/zhqtu02" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/zhqtu02_life" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;zhqtu02_life" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">图图转圈</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>

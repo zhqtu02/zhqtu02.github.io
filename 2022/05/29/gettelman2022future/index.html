@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"zhqtu02.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="0x00 前言 First, we review current models and observations and their advancement over time (“Models and observations” section). Then, we review the tools used to fuse models and data (“Model-data fusion">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gettelman2022future">
+<meta property="og:url" content="https://zhqtu02.github.io/2022/05/29/gettelman2022future/index.html">
+<meta property="og:site_name" content="图图小屋">
+<meta property="og:description" content="0x00 前言 First, we review current models and observations and their advancement over time (“Models and observations” section). Then, we review the tools used to fuse models and data (“Model-data fusion">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-29T02:35:51.000Z">
+<meta property="article:modified_time" content="2022-05-31T03:48:00.000Z">
+<meta property="article:author" content="图图转圈">
+<meta property="article:tag" content="Review">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://zhqtu02.github.io/2022/05/29/gettelman2022future/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>gettelman2022future | 图图小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">图图小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://zhqtu02.github.io/2022/05/29/gettelman2022future/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/notion-avatar.gif">
+      <meta itemprop="name" content="图图转圈">
+      <meta itemprop="description" content="TRUST THE PROCESS.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="图图小屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          gettelman2022future
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-05-29 10:35:51" itemprop="dateCreated datePublished" datetime="2022-05-29T10:35:51+08:00">2022-05-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-05-31 11:48:00" itemprop="dateModified" datetime="2022-05-31T11:48:00+08:00">2022-05-31</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>0x00 前言</p>
+<p>First, we review current models and observations and their advancement over time (“Models and observations” section). Then, we review the tools used to fuse models and data (“Model-data fusion” section) along with a review of current best practices. Last, in the “Methods for blending observations and models” section, we suggest a path toward taking maximum advantage of the upcoming increases in computing power for modeling and analysis alongside enhanced observations of the Earth system. We summarize this in the “The future of model-data fusion” section.</p>
+<span id="more"></span>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h2 id="Models-and-observations"><a href="#Models-and-observations" class="headerlink" title="Models and observations"></a>Models and observations</h2><p>Modeling受限于算力进展（摩尔定律）</p>
+<p>Measurements受限于技术和物理限制</p>
+<p>二者都受限于平衡成本与可证明的社会利益的需要</p>
+<h3 id="Earth-system-models"><a href="#Earth-system-models" class="headerlink" title="Earth system models"></a>Earth system models</h3><p>自从首先描述了数值天气预测的概念以来，已经将近100年了（2）。自从1940年代后期进行电子计算机的第一个数值实验以来，天气模型（3）和气候（4）已明显提高，知识和计算能力都得到了改善。尽管“摩尔定律”的黄金时代决定了每18个月的计算能力增加一倍（5），但新的计算机体系结构和软件继续使计算能力的进步（6）。如图1所示，模型针对给定时空和时间尺度的关键过程的预测和焦点复杂性和计算资源的特定尺度。对于严重的风暴预测，较少的，而在粗（100 km）的空间网格上进行的全球模型数十年来投影气候变化。这两种模型通常都使用从更详细的大型涡流模型（10至100 m的尺度）改编或得出的方法。预测的未来重点不仅扩展到系统状态（例如，温度，风速，降雨速率和径流量），还扩展到直接影响人类社会的应用（例如水文和空气质量）（例如，水文和空气质量）（7）（7） 。预测的时间尺度也正在扩大，例如，对于海平面上升的农业和十年和世纪的季节性预测。在接下来的十年中，天气，气候和空气质量的模型可能会发展为具有几种特征，使它们与当前的型号区分开来。它们将是更高的分辨率，全球天气模型达到1公里（8），全球气候模型达到5至10公里（9）。模型不仅包括地球系统的其他完整组成部分，尤其是土地和化学，还包括海洋和冰冻圈。模型还将设计为从天气到气候的时间和空间范围（图1）进行工作。集成的建模系统将使用共同的元素来跨空间和时间尺度进行预测（10）。当前的一些努力包括英国气象局（11）的统一模型，以及欧盟“目的地地球”计划的计划（1）。集成的地球系统模型将实现特定位置的定位，这是由可变分辨率网格促进的，这些分辨率网格放大到高于全球模型的分辨率区域（12），并可以代替区域气候模型</p>
+<h3 id="Earth-system-observations"><a href="#Earth-system-observations" class="headerlink" title="Earth system observations"></a>Earth system observations</h3><p>Figure 2 illustrates the key components that link predictive models and observations together in what is commonly called an assimilation system. </p>
+<p>The observation model (h) links a physical quantity of interest (xi) to the internal instrument physical measurement (yi) using a given set of parameters (wi). The physical measurement is the intensity of radiation (radiance) in the case of a remote sensing instrument, but the measurement can also be extinction of radiation (e.g., the decrease in radiation that occurs when it is obscured by a cloud), photon counts, or even a change in volume (as for a liquid thermometer). </p>
+<p>An assimilation system is a way of inverting the observation model (called a forward model) to adjust the physical state (xi) of the forecast model (f) to be closer to the observations (y). </p>
+<p>The forecast model uses the state (x) and set of parameters (wi, some possibly shared with the observation model) with a set of physical equations to generate a prediction. These predictions can be of any desired quantity in the Earth system (xi), including what we commonly call “weather prediction”: predicting the state of the atmosphere such as winds and temperatures, where x = {u,v,T} at some point in the future (here, u and v represent horizontal wind components and T represents temperature). </p>
+<p>The forecast model itself can be used in different ways. In an assimilation system, the model is run for <strong>a short period of time</strong> and an observation model is compared directly with observations to bring the initial state closer to the observed state. In <strong>a longer-term prediction model</strong>, for seasonal or climate time scales, the influence of the initial state fades, and the forecast model parameters (wi) are critical (27). Note that the initial conditions for slowly evolving Earth system components like parts of the land (vegetation), cryosphere (glaciers and ice sheets), and ocean (thermocline and deep ocean) are still important at seasonal or even interannual range, so “short”-term prediction of climate can be defined as a season to a year or even a decade.</p>
+<p>图2说明了将预测模型和观察结果联系在一起的关键组件，通常称为同化系统。</p>
+<p>观察模型（H）使用给定的参数（WI）将物理量（XI）连接到内部仪器物理测量（Yi）。物理测量是在遥感仪器的情况下的辐射强度（辐射）的强度，但是测量也可以是辐射的灭绝（例如，当被云遮盖时，辐射的减小），光子计数，光子计数，光子计数甚至体积变化（如液体温度计）。</p>
+<p>同化系统是一种反转观测模型（称为正向模型）以调整预测模型（F）的物理状态（XI）以更接近观测值（y）的方式。</p>
+<p>预测模型使用与一组物理方程式的状态（x）和一组参数（WI，可能与观察模型共享）来生成预测。这些预测可以是地球系统（XI）中的任何所需数量，包括我们通常称为“天气预测”：预测大气状态（例如风和温度），其中x = {u，v，t}在某些情况下未来的点（在这里，U和V表示水平风组分，T表示温度）。</p>
+<p>预测模型本身可以以不同的方式使用。在同化系统中，该模型在短时间内运行，并将观察模型直接与观测值进行比较，以使初始状态更接近观察到的状态。在长期预测模型中，对于季节或气候时间尺度，初始状态褪色和预测模型参数（WI）的影响至关重要（27）。请注意，在季节性甚至在年际范围内，慢慢发展的地球系统组成部分（如土地（植被），冰圈（冰川和冰盖）以及海洋（热跃层和深海）的初始条件仍然很重要，因此“短” - 气候的期限可以定义为一个季节到一年甚至十年。</p>
+<h2 id="Model-data-fusion"><a href="#Model-data-fusion" class="headerlink" title="Model-data fusion"></a>Model-data fusion</h2><h3 id="Components-of-a-model-observation-systems"><a href="#Components-of-a-model-observation-systems" class="headerlink" title="Components of a model-observation systems"></a>Components of a model-observation systems</h3><h3 id="Retrievals"><a href="#Retrievals" class="headerlink" title="Retrievals"></a>Retrievals</h3><h3 id="Data-assimilation"><a href="#Data-assimilation" class="headerlink" title="Data assimilation"></a>Data assimilation</h3><h2 id="Methods-for-blending-observations-and-models"><a href="#Methods-for-blending-observations-and-models" class="headerlink" title="Methods for blending observations and models"></a>Methods for blending observations and models</h2><h3 id="Model-evaluation-and-development"><a href="#Model-evaluation-and-development" class="headerlink" title="Model evaluation and development"></a>Model evaluation and development</h3><h3 id="Data-cube-and-digital-twins"><a href="#Data-cube-and-digital-twins" class="headerlink" title="Data cube and digital twins"></a>Data cube and digital twins</h3><h3 id="Observation-simulators"><a href="#Observation-simulators" class="headerlink" title="Observation simulators"></a>Observation simulators</h3><h3 id="Modifying-the-observing-system-using-models"><a href="#Modifying-the-observing-system-using-models" class="headerlink" title="Modifying the observing system using models"></a>Modifying the observing system using models</h3><h3 id="Uncertainty"><a href="#Uncertainty" class="headerlink" title="Uncertainty"></a>Uncertainty</h3><h2 id="The-future-of-model-data-fusion"><a href="#The-future-of-model-data-fusion" class="headerlink" title="The future of model-data fusion"></a>The future of model-data fusion</h2><h3 id="Unified-models"><a href="#Unified-models" class="headerlink" title="Unified models"></a>Unified models</h3><h3 id="Observations-integrated-into-models"><a href="#Observations-integrated-into-models" class="headerlink" title="Observations integrated into models"></a>Observations integrated into models</h3><h3 id="Detailed-characterization-of-uncertainty-in-models-and-observations"><a href="#Detailed-characterization-of-uncertainty-in-models-and-observations" class="headerlink" title="Detailed characterization of uncertainty in models and observations"></a>Detailed characterization of uncertainty in models and observations</h3><h3 id="Technical-advances"><a href="#Technical-advances" class="headerlink" title="Technical advances"></a>Technical advances</h3><h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><h2 id=""><a href="#" class="headerlink" title=" "></a> </h2>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Review/" rel="tag"># Review</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/21/TrainingCourse/" rel="prev" title="TrainingCourse">
+      <i class="fa fa-chevron-left"></i> TrainingCourse
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2022/07/24/MachineLearning/" rel="next" title="MachineLearning">
+      MachineLearning <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Models-and-observations"><span class="nav-number">2.</span> <span class="nav-text">Models and observations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Earth-system-models"><span class="nav-number">2.1.</span> <span class="nav-text">Earth system models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Earth-system-observations"><span class="nav-number">2.2.</span> <span class="nav-text">Earth system observations</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Model-data-fusion"><span class="nav-number">3.</span> <span class="nav-text">Model-data fusion</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Components-of-a-model-observation-systems"><span class="nav-number">3.1.</span> <span class="nav-text">Components of a model-observation systems</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Retrievals"><span class="nav-number">3.2.</span> <span class="nav-text">Retrievals</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-assimilation"><span class="nav-number">3.3.</span> <span class="nav-text">Data assimilation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Methods-for-blending-observations-and-models"><span class="nav-number">4.</span> <span class="nav-text">Methods for blending observations and models</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-evaluation-and-development"><span class="nav-number">4.1.</span> <span class="nav-text">Model evaluation and development</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Data-cube-and-digital-twins"><span class="nav-number">4.2.</span> <span class="nav-text">Data cube and digital twins</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Observation-simulators"><span class="nav-number">4.3.</span> <span class="nav-text">Observation simulators</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modifying-the-observing-system-using-models"><span class="nav-number">4.4.</span> <span class="nav-text">Modifying the observing system using models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uncertainty"><span class="nav-number">4.5.</span> <span class="nav-text">Uncertainty</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-future-of-model-data-fusion"><span class="nav-number">5.</span> <span class="nav-text">The future of model-data fusion</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Unified-models"><span class="nav-number">5.1.</span> <span class="nav-text">Unified models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Observations-integrated-into-models"><span class="nav-number">5.2.</span> <span class="nav-text">Observations integrated into models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Detailed-characterization-of-uncertainty-in-models-and-observations"><span class="nav-number">5.3.</span> <span class="nav-text">Detailed characterization of uncertainty in models and observations</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Technical-advances"><span class="nav-number">5.4.</span> <span class="nav-text">Technical advances</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">5.5.</span> <span class="nav-text">Summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">6.</span> <span class="nav-text"> </span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="图图转圈"
+      src="/images/notion-avatar.gif">
+  <p class="site-author-name" itemprop="name">图图转圈</p>
+  <div class="site-description" itemprop="description">TRUST THE PROCESS.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/zhqtu02" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:zhqtu02@gmail.com" title="E-Mail → mailto:zhqtu02@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/1822988711" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;1822988711" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/zhqtu02" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;zhqtu02" rel="noopener" target="_blank"><i class="fab fa-twitter fa-fw"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://instagram.com/zhqtu02_life" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;zhqtu02_life" rel="noopener" target="_blank"><i class="fab fa-instagram fa-fw"></i>Instagram</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">图图转圈</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
