@@ -28,7 +28,7 @@
 <meta property="og:description" content="My notes created when studying CLM5-FATES.">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-03-03T01:21:31.000Z">
-<meta property="article:modified_time" content="2023-03-03T03:53:08.004Z">
+<meta property="article:modified_time" content="2023-03-03T14:12:24.938Z">
 <meta property="article:author" content="图图转圈">
 <meta property="article:tag" content="writing">
 <meta property="article:tag" content="CLM5-FATES">
@@ -193,7 +193,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-03-03 09:21:31 / 修改时间：11:53:08" itemprop="dateCreated datePublished" datetime="2023-03-03T09:21:31+08:00">2023-03-03</time>
+              <time title="创建时间：2023-03-03 09:21:31 / 修改时间：22:12:24" itemprop="dateCreated datePublished" datetime="2023-03-03T09:21:31+08:00">2023-03-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,7 +224,21 @@
 <blockquote>
 <p>The implementation of the Ecosystem Demography concept within FATES links the surface flux and canopy physiology concepts in the CLM/E3SM with numerous additional developments necessary to accommodate the new model also documented here.</p>
 </blockquote>
-<h2 id="Run-CLM5-FATES-according-Tutorials"><a href="#Run-CLM5-FATES-according-Tutorials" class="headerlink" title="Run CLM5-FATES according Tutorials"></a>Run CLM5-FATES according <a target="_blank" rel="noopener" href="https://fates-users-guide.readthedocs.io/en/latest/running-fates-walkthrough.html">Tutorials</a></h2>
+<h2 id="Run-CLM5-FATES-according-Tutorials"><a href="#Run-CLM5-FATES-according-Tutorials" class="headerlink" title="Run CLM5-FATES according Tutorials"></a>Run CLM5-FATES according <a target="_blank" rel="noopener" href="https://fates-users-guide.readthedocs.io/en/latest/running-fates-walkthrough.html">Tutorials</a></h2><h3 id="CLM的基本步骤"><a href="#CLM的基本步骤" class="headerlink" title="CLM的基本步骤"></a>CLM的基本步骤</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Create the case</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> cime/scripts</span><br><span class="line"></span><br><span class="line">./create_newcase --<span class="keyword">case</span> &lt;testcase&gt; --mach cheyenne --res f09_g16_gl4 -compset I2000Clm50BgcCrop</span><br><span class="line">(./create_newcase -<span class="built_in">help</span> -- to get <span class="built_in">help</span> on the script)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Setup the case</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> &lt;testcase&gt;</span><br><span class="line">./xmlchange id1=val1,id2=val2  <span class="comment"># to make changes to any settings in the env_*.xml files</span></span><br><span class="line">./case.setup</span><br><span class="line">(./case.setup -<span class="built_in">help</span> -- to get <span class="built_in">help</span> on the script)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Add any namelist changes to the user_nl_* files</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$EDITOR</span> user_nl_*</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compile the code</span></span><br><span class="line"></span><br><span class="line">./case.build</span><br><span class="line"></span><br><span class="line"><span class="comment"># Submit the run</span></span><br><span class="line"></span><br><span class="line">./case.submit</span><br></pre></td></tr></table></figure>
+<h3 id="A-simple-case-run-1x1-brazil"><a href="#A-simple-case-run-1x1-brazil" class="headerlink" title="A simple case - run 1x1 brazil"></a>A simple case - run 1x1 brazil</h3><ul>
+<li>This script will BUILD a CESM single point simulation for the 1x1_brazil resolution.</li>
+<li>1x1_brazil is a pre-made “resolution”, meaning the support files domain/surface/etc are already available. </li>
+<li>This is a single-site, located roughly in the southern Amazon.<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> data/docs_cesm/docs_clm5.0/clm5.0/cime/scripts</span><br><span class="line">./create_newcase --<span class="keyword">case</span> cases_xialab/tzq_test_fates_run1 --compset I2000Clm50FatesCruGs --res 1x1_brazil --mach EcoSummer --run-unsupported</span><br><span class="line"></span><br><span class="line"><span class="built_in">cd</span> cases_xialab/tzq_test_fates_run1</span><br><span class="line">./xmlchange --<span class="built_in">id</span> STOP_N --val 5</span><br><span class="line">./xmlchange --<span class="built_in">id</span> RUN_STARTDATE --val <span class="string">&#x27;2001-01-01&#x27;</span></span><br><span class="line">./xmlchange --<span class="built_in">id</span> STOP_OPTION --val nyears</span><br><span class="line">./xmlchange --<span class="built_in">id</span> DATM_CLMNCEP_YR_START --val 1996</span><br><span class="line">./xmlchange --<span class="built_in">id</span> DATM_CLMNCEP_YR_END --val 2001</span><br><span class="line">./xmlchange --<span class="built_in">id</span> CLM_FORCE_COLDSTART --val on</span><br><span class="line"></span><br><span class="line">./case.setup</span><br><span class="line"></span><br><span class="line">./case.build</span><br><span class="line"></span><br><span class="line">./case.submit -a “-N test_tzq”</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="待整理"><a href="#待整理" class="headerlink" title="待整理"></a>待整理</h3><p><code>./query_config</code> 查询</p>
+<p>单点运行的三种模型</p>
+<ul>
+<li><code>PTS_MODE</code> runs for a single point using global datasets.</li>
+<li><code>CLM_USRDAT_NAME</code> runs using your own datasets (single-point or regional).</li>
+<li><code>PTCLMmkdata</code> easily setup simulations to run for tower sites..</li>
+</ul>
+
     </div>
 
     
@@ -310,7 +324,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FATES-and-CLM5-FATES"><span class="nav-number">1.</span> <span class="nav-text">FATES and CLM5-FATES</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-CLM5-FATES-according-Tutorials"><span class="nav-number">2.</span> <span class="nav-text">Run CLM5-FATES according Tutorials</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#FATES-and-CLM5-FATES"><span class="nav-number">1.</span> <span class="nav-text">FATES and CLM5-FATES</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-CLM5-FATES-according-Tutorials"><span class="nav-number">2.</span> <span class="nav-text">Run CLM5-FATES according Tutorials</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CLM%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.1.</span> <span class="nav-text">CLM的基本步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-simple-case-run-1x1-brazil"><span class="nav-number">2.2.</span> <span class="nav-text">A simple case - run 1x1 brazil</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BE%85%E6%95%B4%E7%90%86"><span class="nav-number">2.3.</span> <span class="nav-text">待整理</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
